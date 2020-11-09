@@ -49,11 +49,15 @@ bot.on("message", async message => {
     } else if (message.content.startsWith(`${config.prefix}skip`)) {
       skip(message, serverQueue);
       return 
-    }else if (message.content.startsWith(`${config.prefix}talk`)) {
+    }else if (message.content.startsWith(`${config.prefix}goodmorning`)) {
+      
+      return message.channel.send("Good morning sunshines~ <3 Hope you will have a great day!");;;
+      
+    }else if (message.content.startsWith(`${config.prefix}goodbye`)) {
       
       return message.channel.send("May the force be with you!~");;;
       
-    }  else if (message.content.startsWith(`${config.prefix}goodnight`)) {
+    }   else if (message.content.startsWith(`${config.prefix}goodnight`)) {
       
       return message.channel.send("GOOD NIGHT! SWEET DREAM!!~");;;
       
