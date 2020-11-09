@@ -6,10 +6,10 @@ module.exports.run = async (bot, message, args) => {
     //     attachment: meeting,
     //     name:"meeting"
     // }})
-   
-    return message.channel.send(("EMERGENCY MEETING", {files: ["https://staticg.sportskeeda.com/editor/2020/09/8f836-16010271269569-800.jpg"]}))
+    message.channel.send(`${args[0].toUpperCase()} GOT KILLED!!`)
+    return message.channel.send(("EMERGENCY MEETING", {files: ["https://i.kym-cdn.com/photos/images/original/001/890/995/e1c.gif"]}))
 }
 
 module.exports.help ={
-    name: "meeting"
+    name: "kill"
 }
