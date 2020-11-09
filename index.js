@@ -60,7 +60,8 @@ bot.on("message", async message => {
       stop(message, serverQueue);
       return;
     } else {
-      message.channel.send("I dont know what you want");
+      // message.channel.send("I dont know what you want");
+      return;
     }
   });
   
