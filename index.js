@@ -49,7 +49,7 @@ bot.on("message", async message => {
     } else if (message.content.startsWith(`${config.prefix}skip`)) {
       skip(message, serverQueue);
       return 
-    }else if (message.content.startsWith(`${config.prefix}goodmorning`)) {
+    } else if (message.content.startsWith(`${config.prefix}goodmorning`)) {
       
       return message.channel.send("Good morning sunshines~ <3 Hope you will have a great day!");;;
       
@@ -61,7 +61,7 @@ bot.on("message", async message => {
       
       return message.channel.send("May the force be with you!~");;;
       
-    }   else if (message.content.startsWith(`${config.prefix}goodnight`)) {
+    } else if (message.content.startsWith(`${config.prefix}goodnight`)) {
       
       return message.channel.send("GOOD NIGHT! SWEET DREAM!!~");;;
       
@@ -86,12 +86,12 @@ bot.on("message", async message => {
       return message.channel.send(
         "You need to be in a voice channel to play music!"
       );
-    const permissions = voiceChannel.permissionsFor(message.client.user);
-    if (!permissions.has("CONNECT") || !permissions.has("SPEAK")) {
-      return message.channel.send(
-        "I need the permissions to join and speak in your voice channel!"
-      );
-    }
+    // const permissions = voiceChannel.permissionsFor(message.client.user);
+    // if (!permissions.has("CONNECT") || !permissions.has("SPEAK")) {
+    //   return message.channel.send(
+    //     "I need the permissions to join and speak in your voice channel!"
+    //   );
+    // }
   
     const songInfo = await ytdl.getInfo(args[1]);
   //   console.log({songInfo})
