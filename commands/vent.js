@@ -7,9 +7,9 @@ module.exports.run = async (bot, message, args) => {
     //     attachment: meeting,
     //     name:"meeting"
     // }})
-    return message.channel.send(`I love ${args[0].toUpperCase()} so much, I dream you being an imposter`)
+    return message.channel.send(`I saw ${args[0].toUpperCase()} vent!!!!!`)
 }
 
 module.exports.help ={
-    name: "love"
+    name: "vent"
 }
