@@ -1,0 +1,29 @@
+{
+  "name": "musikbot",
+  "version": "1.0.0",
+  "description": "A musik bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joowoonk/music-bot.git"
+  },
+  "author": "joowoon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joowoonk/music-bot/issues"
+  },
+  "homepage": "https://github.com/joowoonk/music-bot#readme",
+  "dependencies": {
+    "@discordjs/opus": "^0.3.3",
+    "discord.js": "^12.4.1",
+    "dotenv": "^8.2.0",
+    "ffmpeg": "0.0.4",
+    "ffmpeg-static": "^4.2.7",
+    "fluent-ffmpeg": "^2.1.2",
+    "fs": "0.0.1-security",
+    "ytdl-core": "^4.0.3"
+  }
+}
