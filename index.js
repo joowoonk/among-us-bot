@@ -53,6 +53,10 @@ bot.on("message", async message => {
       
       return message.channel.send("Good morning sunshines~ <3 Hope you will have a great day!");;;
       
+    }else if (message.content.startsWith(`${config.prefix}loveyou`)) {
+      
+      return message.channel.send("Good morning sunshines~ <3 Hope you will have a great day!");;;
+      
     }else if (message.content.startsWith(`${config.prefix}goodbye`)) {
       
       return message.channel.send("May the force be with you!~");;;
