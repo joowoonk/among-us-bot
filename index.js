@@ -36,7 +36,8 @@ fs.readdir('./commands/', (err, files) => {
 })
 
 bot.on("message", async message => {
-    if (message.author.bot) return;
+  try {
+     if (message.author.bot) return;
     if (!message.content.startsWith(config.prefix)) return;
   
     const serverQueue = queue.get(message.guild.id);
@@ -63,6 +64,10 @@ bot.on("message", async message => {
       // message.channel.send("I dont know what you want");
       return;
     }
+  } catch (error) {
+    console.error(error)
+  }
+   
   });
   
   async function execute(message, serverQueue) {
