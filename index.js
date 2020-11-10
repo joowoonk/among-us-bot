@@ -129,7 +129,7 @@ bot.on("message", async message => {
     }
   }
   
-  function skip(message, serverQueue) {
+ async function skip(message, serverQueue) {
     if (!message.member.voice.channel)
       return message.channel.send(
         "You have to be in a voice channel to stop the music!"
@@ -139,7 +139,7 @@ bot.on("message", async message => {
     serverQueue.connection.dispatcher.end();
   }
   
-  function stop(message, serverQueue) {
+  async function stop(message, serverQueue) {
     if (!message.member.voice.channel)
       return message.channel.send(
         "You have to be in a voice channel to stop the music!"
@@ -148,7 +148,7 @@ bot.on("message", async message => {
     serverQueue.connection.dispatcher.end();
   }
   
-  function play(guild, song) {
+  async function play(guild, song) {
     const serverQueue = queue.get(guild.id);
     if (!song) {
       serverQueue.voiceChannel.leave();
