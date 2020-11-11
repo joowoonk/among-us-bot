@@ -36,10 +36,15 @@ fs.readdir('./commands/', (err, files) => {
 })
 
 bot.on("message", (message, args) => {
-  if (message.content.includes("hello")) {
+  if (message.content.toLowerCase().includes("hello")) {
     message.channel.send(`Hello, <@${message.member.id}>, I'm your friendly bot!`);
   }
 });
+// bot.on("message", (message, args) => {
+//   if (message.content.includes("I am") || message.content.includes("I'm")) {
+//     message.channel.send(`Hello, <@${message.member.id}>, I'm your friendly bot!`);
+//   }
+// });
 
 bot.on("message", async (message, args) => {
   try {
