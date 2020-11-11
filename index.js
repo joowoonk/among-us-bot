@@ -39,14 +39,12 @@ bot.on("message", (message, args) => {
   if (message.content.includes("hello")) {
    return message.channel.send(`Hello, <@${message.member.id}>, I'm your friendly bot!`);
   }
-  if (message.content.includes("Hello")) {
-    return message.channel.send(`Hello, <@${message.member.id}>, I'm your friendly bot!`);
+  else if (message.content.includes("good morning")) {
+    return message.channel.send(`Guten Morgen, <@${message.member.id}>, Ich bin dein freundlicher Bot!`);
    }
 });
 bot.on("message", (message, args) => {
-  if (message.content.includes("good morning")) {
-   return message.channel.send(`Guten Morgen, <@${message.member.id}>, Ich bin dein freundlicher Bot!`);
-  }
+
 });
 
 bot.on("message", async (message, args) => {
