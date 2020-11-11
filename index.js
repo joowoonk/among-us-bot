@@ -35,7 +35,7 @@ fs.readdir('./commands/', (err, files) => {
     })
 })
 
-bot.on("message", async message => {
+bot.on("message", async (message, args) => {
   try {
      if (message.author.bot) return;
     if (!message.content.startsWith(config.prefix)) return;
@@ -158,40 +158,6 @@ bot.on("message", async message => {
     dispatcher.setVolumeLogarithmic(serverQueue.volume / 5);
     serverQueue.textChannel.send(`Start playing: **${song.title}**`);
   }
-
-  bot.on('guildMemberAdd', member => {
-    // Send the message to a designated channel on a server:
-    const channel = member.guild.channels.cache.find(ch => ch.name === 'member-log');
-    // Do nothing if the channel wasn't found on this server
-    if (!channel) return;
-    // Send the message, mentioning the member
-    channel.send(`Welcome to the server, ${member}, please read the rules and have fun!`);
-  });
-//   let replies = ["Guten Morgen!", "Good Morning!", "좋은 아침입니다!"];
-
-// // Configure the randomizer that will pick a random integer from 0 to the length of the array; used for array index
-// let random = Math.floor(Math.random() * replies.length);
-  
-//   bot.on("message", function (user, userID, channelID, message, evt) {
-//     // Our bot needs to know if it will execute a command
-//     // It will listen for messages that will start with /
-//     if (message.substring(0, 1) == '/') {
-//         var args = message.substring(1).split(' ');
-//         var cmd = args[0];
-
-//         args = args.splice(1);
-//         switch(cmd) {
-//             // /Hi
-//             case 'morning':
-//                 bot.sendMessage({
-//                     to: channelID,
-//                     message: replies[random]
-//                 });
-//         break;
-//         // Just add any case commands if you want to..
-//          }
-//      }
-// });
 
 bot.on("message", async message => {
     if (message.author.bot) return;
