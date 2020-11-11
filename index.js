@@ -49,13 +49,15 @@ bot.on("message", async (message, args) => {
     } else if (message.content.startsWith(`${config.prefix}skip`)) {
       skip(message, serverQueue);
       return 
+    }else if (message.content.includes(`I am`)) {
+      return message.channel.send(`Hello, I am ${args.toString()}, I am your friendly bot!`);
     }else if (message.content.startsWith(`${config.prefix}talk`)) {
       
-      return message.channel.send("May the force be with you!~");;;
+      return message.channel.send("What do you want me to talk about?");
       
     }  else if (message.content.startsWith(`${config.prefix}goodnight`)) {
       
-      return message.channel.send("GOOD NIGHT! SWEET DREAM!!~");;;
+      return message.channel.send("GOOD NIGHT! SWEET DREAM!!~");
       
     }else if (message.content.startsWith(`${config.prefix}stop`)) {
       stop(message, serverQueue);
