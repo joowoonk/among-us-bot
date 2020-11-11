@@ -39,6 +39,9 @@ bot.on("message", (message, args) => {
   if (message.content.includes("hello")) {
    return message.channel.send(`Hello, <@${message.member.id}>, I'm your friendly bot!`);
   }
+  if (message.content.includes("Hello")) {
+    return message.channel.send(`Hello, <@${message.member.id}>, I'm your friendly bot!`);
+   }
 });
 // bot.on("message", (message, args) => {
 //   if (message.content.includes("I am") || message.content.includes("I'm")) {
