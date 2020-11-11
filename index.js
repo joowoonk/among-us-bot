@@ -35,6 +35,12 @@ fs.readdir('./commands/', (err, files) => {
     })
 })
 
+bot.on("message", (message, args) => {
+  if (message.content == "hello") {
+    message.channel.send(`Hello, ${message.member.user.tag}, I'm your friendly bot!`);
+  }
+});
+
 bot.on("message", async (message, args) => {
   try {
      if (message.author.bot) return;
@@ -49,8 +55,6 @@ bot.on("message", async (message, args) => {
     } else if (message.content.startsWith(`${config.prefix}skip`)) {
       skip(message, serverQueue);
       return 
-    }else if (message.content.startsWith(`I am`)) {
-      return message.channel.send(`Hello, I am ${args.toString(" ")}, I am your friendly bot!`);
     }else if (message.content.startsWith(`${config.prefix}talk`)) {
       
       return message.channel.send("What do you want me to talk about?");
