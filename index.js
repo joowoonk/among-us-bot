@@ -35,6 +35,15 @@ fs.readdir('./commands/', (err, files) => {
     })
 })
 
+bot.on("message", (message, args) => {
+  if (message.content.includes("hello")) {
+   return message.channel.send(`Hello, <@${message.member.id}>, I'm your friendly bot!`);
+  }
+  else if (message.content.includes("good morning")) {
+    return message.channel.send(`Guten Morgen, <@${message.member.id}>, Ich bin dein freundlicher Bot!`);
+   }
+});
+
 
 bot.on("message", async (message, args) => {
   try {
@@ -54,11 +63,7 @@ bot.on("message", async (message, args) => {
       
       return message.channel.send("What do you want me to talk about?");
       
-    } else if (message.content.includes("hello")) {
-      return message.channel.send(`Hello, <@${message.member.id}>, I'm your friendly bot!`);
-     }else if (message.content.includes("good morning")) {
-       return message.channel.send(`Guten Morgen, <@${message.member.id}>, Ich bin dein freundlicher Bot!`);
-      }else if (message.content.startsWith(`${config.prefix}goodnight`)) {
+    }  else if (message.content.startsWith(`${config.prefix}goodnight`)) {
       
       return message.channel.send("GOOD NIGHT! SWEET DREAM!!~");
       
