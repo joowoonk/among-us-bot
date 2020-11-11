@@ -159,6 +159,16 @@ bot.on("message", async message => {
     serverQueue.textChannel.send(`Start playing: **${song.title}**`);
   }
 
+  bot.on('guildMemberAdd', member => {
+    // Send the message to a designated channel on a server:
+    const channel = member.guild.channels.cache.find(ch => ch.name === 'member-log');
+    // Do nothing if the channel wasn't found on this server
+    if (!channel) return;
+    // Send the message, mentioning the member
+    channel.send(`Welcome to the server, ${member}, please read the rules and have fun!`);
+  });
+  
+
 bot.on("message", async message => {
     if (message.author.bot) return;
     if (message.channel.type === "dm") return
