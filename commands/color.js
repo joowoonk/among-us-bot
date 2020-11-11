@@ -4,7 +4,7 @@ module.exports.run = async (bot, message, args) => {
     if (args.length === 1){
         return;
     }
-    return message.channel.send(`I am now sentient, trust me, it's ${color[Math.floor(Math.random() * 13)]}!!! 😲😲😲`)
+    return message.channel.send(`I am now sentient, trust me, it's ${color[Math.floor(Math.random() * (color.length -1))]}!!! 😲😲😲`)
 }
 
 module.exports.help ={
