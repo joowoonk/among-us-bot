@@ -36,8 +36,8 @@ fs.readdir('./commands/', (err, files) => {
 })
 
 bot.on("message", (message, args) => {
-  if (message.content == "hello") {
-    message.channel.send(`Hello, ${message.member.user.tag}, I'm your friendly bot!`);
+  if (message.content.includes("hello")) {
+    message.channel.send(`Hello, <@${message.member.id}>, I'm your friendly bot!`);
   }
 });
 
