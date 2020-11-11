@@ -36,7 +36,7 @@ fs.readdir('./commands/', (err, files) => {
 })
 
 bot.on("message", (message, args) => {
-  if (message.content.toLowerCase().includes("hello")) {
+  if (message.content.includes("hello")) {
    return message.channel.send(`Hello, <@${message.member.id}>, I'm your friendly bot!`);
   }
 });
