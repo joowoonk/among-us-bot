@@ -41,7 +41,13 @@ bot.on("message", (message, args) => {
   }
   else if (message.content.includes("morning")) {
     return message.channel.send(`Guten Morgen, <@${message.member.id}>, Ich bin dein freundlicher Bot!`);
-   }  else if (message.content.includes("play among us")) {
+
+    // Gute Nacht, dein freundlicher Bot wird dich vermissen
+   }  else if (message.content.includes("night")) {
+    return message.channel.send(`Gute Nacht, dein freundlicher Bot wird dich vermissen <@${message.member.id}>!`);
+
+    
+   }else if (message.content.includes("play among us")) {
     return message.channel.send(`Me me! I will play with you, <@${message.member.id}>! ${letter[Math.floor(Math.random() * 27)]}${letter[Math.floor(Math.random() * 27)]}${letter[Math.floor(Math.random() * 27)]}${letter[Math.floor(Math.random() * 27)]}${letter[Math.floor(Math.random() * 27)]}${letter[Math.floor(Math.random() * 27)]}`);
    }
 });
