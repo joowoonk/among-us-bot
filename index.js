@@ -34,7 +34,7 @@ fs.readdir('./commands/', (err, files) => {
         bot.commands.set(props.help.name, props)
     })
 })
-let letter = ["A","B","C","D","E","F","G","H","I","J","K","M","N","O","P","Q","R","S","T","U","V","W","X","Z"]
+let letter = ["A","B","C","D","E","F","G","H","I","J","K","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
 bot.on("message", (message, args) => {
   if (message.content.includes("hello")) {
    return message.channel.send(`Hello, <@${message.member.id}>, I'm your friendly bot!`);
