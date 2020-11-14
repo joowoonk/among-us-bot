@@ -34,13 +34,15 @@ fs.readdir('./commands/', (err, files) => {
         bot.commands.set(props.help.name, props)
     })
 })
-
+let letter = ["A","B","C","D","E","F","G","H","I","J","K","M","N","O","P","Q","R","S","T","U","V","W","X","Z"]
 bot.on("message", (message, args) => {
   if (message.content.includes("hello")) {
    return message.channel.send(`Hello, <@${message.member.id}>, I'm your friendly bot!`);
   }
-  else if (message.content.includes("good morning")) {
+  else if (message.content.includes("morning")) {
     return message.channel.send(`Guten Morgen, <@${message.member.id}>, Ich bin dein freundlicher Bot!`);
+   }  else if (message.content.includes("play among us")) {
+    return message.channel.send(`Me me! I will play with you, <@${message.member.id}>! ${letter[Math.floor(Math.random() * 27)]}${letter[Math.floor(Math.random() * 27)]}${letter[Math.floor(Math.random() * 27)]}${letter[Math.floor(Math.random() * 27)]}${letter[Math.floor(Math.random() * 27)]}${letter[Math.floor(Math.random() * 27)]}`);
    }
 });
 
