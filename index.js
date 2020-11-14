@@ -48,7 +48,7 @@ bot.on("message", (message, args) => {
 
     
    }else if (message.content.includes("play among us")) {
-    return message.channel.send(`Me me! I will play with you, <@${message.member.id}>! ${letter[Math.floor(Math.random() * 27)]}${letter[Math.floor(Math.random() * 27)]}${letter[Math.floor(Math.random() * 27)]}${letter[Math.floor(Math.random() * 27)]}${letter[Math.floor(Math.random() * 27)]}${letter[Math.floor(Math.random() * 27)]}`);
+    return message.channel.send(`Me me! I will play with you, <@${message.member.id}>! ${letter[Math.floor(Math.random() * 26)]}${letter[Math.floor(Math.random() * 26)]}${letter[Math.floor(Math.random() * 26)]}${letter[Math.floor(Math.random() * 26)]}${letter[Math.floor(Math.random() * 26)]}${letter[Math.floor(Math.random() * 26)]}`);
    }
 });
 
