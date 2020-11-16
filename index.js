@@ -43,11 +43,17 @@ bot.on("message", (message, args) => {
     return message.channel.send(`Guten Morgen, <@${message.member.id}>, Ich bin dein freundlicher Bot!`);
 
     // Gute Nacht, dein freundlicher Bot wird dich vermissen
-   }  else if (message.content.includes("night")) {
+   } else if (message.content.includes("hallo")) {
+    return message.channel.send(`Hello, <@${message.member.id}>, I'm your friendly bot!`);
+
+    // Gute Nacht, dein freundlicher Bot wird dich vermissen
+   } else if (message.content.includes("night")) {
     return message.channel.send(`Gute Nacht, dein freundlicher Bot wird dich vermissen <@${message.member.id}>!`);
 
     
    }else if (message.content.includes("play among us")) {
+    return message.channel.send(`Me me! I will play with you, <@${message.member.id}>! ${letter[Math.floor(Math.random() * 26)]}${letter[Math.floor(Math.random() * 26)]}${letter[Math.floor(Math.random() * 26)]}${letter[Math.floor(Math.random() * 26)]}${letter[Math.floor(Math.random() * 26)]}${letter[Math.floor(Math.random() * 26)]}`);
+   }else if (message.content.includes("playing among us")) {
     return message.channel.send(`Me me! I will play with you, <@${message.member.id}>! ${letter[Math.floor(Math.random() * 26)]}${letter[Math.floor(Math.random() * 26)]}${letter[Math.floor(Math.random() * 26)]}${letter[Math.floor(Math.random() * 26)]}${letter[Math.floor(Math.random() * 26)]}${letter[Math.floor(Math.random() * 26)]}`);
    }
 });
