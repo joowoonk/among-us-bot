@@ -51,34 +51,6 @@ bot.on("message", (message, args) => {
     return message.channel.send(`Morning <@${message.member.id}>!`);
 
     
-   }else if (message.content.includes("L0cina")) {
-    return message.channel.send(`Hello L0Cina`);
-
-    
-   }else if (message.content.includes("Liesa")) {
-    return message.channel.send(`Hello Liesa`);
-
-    
-   }else if (message.content.includes("Vivu")) {
-    return message.channel.send(`Hello Vivu`);
-
-    
-   }else if (message.content.includes("Abi")) {
-    return message.channel.send(`Hello Abi`);
-
-    
-   }else if (message.content.includes("Nick")) {
-    return message.channel.send(`Hello Nick`);
-
-    
-   }else if (message.content.includes("Jenny")) {
-    return message.channel.send(`Hello Jenny`);
-
-    
-   }else if (message.content.includes("Joowoon")) {
-    return message.channel.send(`Hello?`);
-
-    
    }else if (message.content.includes("night")) {
     return message.channel.send(`Gute Nacht, dein freundlicher Bot wird dich vermissen <@${message.member.id}>!`);
 
