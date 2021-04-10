@@ -103,7 +103,7 @@ let bts = [
 ];
 
 // console.log(bts[x])
-// console.log(bts.length,x)
+console.log("bts: ", bts.length);
 module.exports.run = async (bot, message, args) => {
   let x = Math.floor(Math.random() * bts.length - 1);
   if (x < 0) {
@@ -117,5 +117,5 @@ module.exports.run = async (bot, message, args) => {
 };
 
 module.exports.help = {
-  name: "lisa",
+  name: "bts",
 };

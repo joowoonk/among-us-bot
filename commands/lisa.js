@@ -216,7 +216,7 @@ let blackpink = [
 ];
 
 // console.log(blackpink[x])
-// console.log(blackpink.length,x)
+console.log("blackpink: ", blackpink.length);
 module.exports.run = async (bot, message, args) => {
   let x = Math.floor(Math.random() * blackpink.length - 1);
   if (x < 0) {
