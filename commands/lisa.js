@@ -322,8 +322,29 @@ module.exports.run = async (bot, message, args) => {
   if (x < 0) {
     x = x * -1;
   } else if (blackpink[x].includes("tenor")) {
+    message.channel.send(blackpink[x]);
+    message.channel.send(blackpink[x]);
+    message.channel.send(blackpink[x]);
+    message.channel.send(blackpink[x]);
+    message.channel.send(blackpink[x]);
+    message.channel.send(blackpink[x]);
+    message.channel.send(blackpink[x]);
+    message.channel.send(blackpink[x]);
+    message.channel.send(blackpink[x]);
+    message.channel.send(blackpink[x]);
+    message.channel.send(blackpink[x]);
     return message.channel.send(blackpink[x]);
   } else {
+    message.channel.send(("dance time", { files: [blackpink[x]] }));
+    message.channel.send(("dance time", { files: [blackpink[x]] }));
+    message.channel.send(("dance time", { files: [blackpink[x]] }));
+    message.channel.send(("dance time", { files: [blackpink[x]] }));
+    message.channel.send(("dance time", { files: [blackpink[x]] }));
+    message.channel.send(("dance time", { files: [blackpink[x]] }));
+    message.channel.send(("dance time", { files: [blackpink[x]] }));
+    message.channel.send(("dance time", { files: [blackpink[x]] }));
+    message.channel.send(("dance time", { files: [blackpink[x]] }));
+    message.channel.send(("dance time", { files: [blackpink[x]] }));
     return message.channel.send(("dance time", { files: [blackpink[x]] }));
   }
   // message.channel.send(`Lisa is love <3`)
