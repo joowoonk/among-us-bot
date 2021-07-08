@@ -196,7 +196,6 @@ let blackpink = [
   "https://tenor.com/view/lisa-funny-hot-lalisa-cute-gif-18908820",
   "https://tenor.com/view/ayeah-ayeah-pointing-smile-cute-lisa-gif-16007292",
   "https://tenor.com/view/lisa-ei-pi-dance2020-lisa-lisa-blackpink-lalisa-manobal-blackpink-gif-19171168",
-  "https://tenor.com/search/black-pink-gifs",
   "https://tenor.com/view/lisa-blackpink-cute-cat-kawaii-gif-9482296",
   "https://tenor.com/view/cute-rabit-smile-lisa-lalisa-manoban-gif-16808122",
   "https://tenor.com/view/%eb%a6%ac%ec%82%ac-%eb%9d%bc%eb%a6%ac%ec%82%ac%eb%a7%88%eb%85%b8%eb%b0%98-%eb%af%b8%ec%86%8c-%ec%9b%83%ec%9d%8c-%eb%b8%94%eb%9e%99%ed%95%91%ed%81%ac-gif-11741230",
