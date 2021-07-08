@@ -12,7 +12,7 @@ bot.on("ready", async () => {
     console.log(`${bot.user.username} is ready for action!`)
     // bot.user.setActivity("..Under Construction!");
     // if (config.activity.streaming == true){
-        bot.user.setActivity("twitch => lizzyliesalo")
+        bot.user.setActivity("I'm nobody")
         // bot.user.setStatus("dnd")
     // }
 })

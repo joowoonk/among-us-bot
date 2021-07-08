@@ -321,83 +321,10 @@ module.exports.run = async (bot, message, args) => {
   if (x < 0) {
     x = x * -1;
   } else if (blackpink[x].includes("tenor")) {
-    message.channel.send(
-      blackpink[Math.floor(Math.random() * blackpink.length - 1)]
-    );
-    message.channel.send(
-      blackpink[Math.floor(Math.random() * blackpink.length - 1)]
-    );
-    message.channel.send(
-      blackpink[Math.floor(Math.random() * blackpink.length - 1)]
-    );
-    message.channel.send(
-      blackpink[Math.floor(Math.random() * blackpink.length - 1)]
-    );
-    message.channel.send(
-      blackpink[Math.floor(Math.random() * blackpink.length - 1)]
-    );
-    message.channel.send(
-      blackpink[Math.floor(Math.random() * blackpink.length - 1)]
-    );
-    message.channel.send(
-      blackpink[Math.floor(Math.random() * blackpink.length - 1)]
-    );
-    message.channel.send(
-      blackpink[Math.floor(Math.random() * blackpink.length - 1)]
-    );
-    message.channel.send(
-      blackpink[Math.floor(Math.random() * blackpink.length - 1)]
-    );
-    message.channel.send(
-      blackpink[Math.floor(Math.random() * blackpink.length - 1)]
-    );
-    message.channel.send(
-      blackpink[Math.floor(Math.random() * blackpink.length - 1)]
-    );
     return message.channel.send(
       blackpink[Math.floor(Math.random() * blackpink.length - 1)]
     );
   } else {
-    message.channel.send(
-      ("dance time",
-      { files: [blackpink[Math.floor(Math.random() * blackpink.length - 1)]] })
-    );
-    message.channel.send(
-      ("dance time",
-      { files: [blackpink[Math.floor(Math.random() * blackpink.length - 1)]] })
-    );
-    message.channel.send(
-      ("dance time",
-      { files: [blackpink[Math.floor(Math.random() * blackpink.length - 1)]] })
-    );
-    message.channel.send(
-      ("dance time",
-      { files: [blackpink[Math.floor(Math.random() * blackpink.length - 1)]] })
-    );
-    message.channel.send(
-      ("dance time",
-      { files: [blackpink[Math.floor(Math.random() * blackpink.length - 1)]] })
-    );
-    message.channel.send(
-      ("dance time",
-      { files: [blackpink[Math.floor(Math.random() * blackpink.length - 1)]] })
-    );
-    message.channel.send(
-      ("dance time",
-      { files: [blackpink[Math.floor(Math.random() * blackpink.length - 1)]] })
-    );
-    message.channel.send(
-      ("dance time",
-      { files: [blackpink[Math.floor(Math.random() * blackpink.length - 1)]] })
-    );
-    message.channel.send(
-      ("dance time",
-      { files: [blackpink[Math.floor(Math.random() * blackpink.length - 1)]] })
-    );
-    message.channel.send(
-      ("dance time",
-      { files: [blackpink[Math.floor(Math.random() * blackpink.length - 1)]] })
-    );
     return message.channel.send(
       ("dance time",
       { files: [blackpink[Math.floor(Math.random() * blackpink.length - 1)]] })
