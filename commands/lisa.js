@@ -262,7 +262,6 @@ let blackpink = [
   "https://tenor.com/view/sushichaeng-reaction-meme-kpop-lisa-manoban-gif-20805386",
   "https://tenor.com/view/blackpink-lisa-lilifilm-dance-gif-20358203",
   "https://tenor.com/view/blackpink-lisa-lilifilm-the-movie-gif-20356547",
-  "https://tenor.com/view/blackpink-lisa-lilifilm-the-movie-gif-20356534",
   "https://tenor.com/view/blackpink-lisa-lilifilm-the-movie-gif-20356543",
   "https://tenor.com/view/blackpink-lisa-lilifilm-the-movie-gif-20356535",
   "https://tenor.com/view/blackpink-lisa-lilifilm-the-movie-gif-20356527",
