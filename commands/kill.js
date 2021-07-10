@@ -27,10 +27,12 @@ module.exports.run = async (bot, message, args) => {
      if (x < 0) {
        x = x * -1;
      } else if (kill[x].includes("tenor")) {
+         message.channel.send(`${args[0].toUpperCase()} GOT KILLED!!`);
        return message.channel.send(
          kill[Math.floor(Math.random() * kill.length - 1)]
        );
      } else {
+         message.channel.send(`${args[0].toUpperCase()} GOT KILLED!!`);
        return message.channel.send(
          ("Killed",
          {
