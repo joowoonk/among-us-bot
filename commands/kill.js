@@ -5,7 +5,7 @@ let kill = [
   "https://tenor.com/view/patrick-star-imposter-among-us-kucing-menangis-spongebob-gif-18520418",
   "https://tenor.com/view/among-us-among-us-scary-eldritch-horror-horror-loop-gif-18542911",
   "https://tenor.com/view/pwned-dominating-gif-18280504",
-  "https://tenor.com/view/among-us-kill-gif-19528672",
+  // "https://tenor.com/view/among-us-kill-gif-19528672",
   "https://tenor.com/view/among-us-kill-gif-19205211",
   "https://tenor.com/view/stab-in-the-back-yeti-yetiapocalypse-kill-murder-gif-20607054",
   "https://tenor.com/view/among-us-gif-19009522",
