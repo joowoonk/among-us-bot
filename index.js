@@ -43,30 +43,34 @@ bot.on("message", (message, args) => {
 
  
   if (message.content.includes("hello")) {
-     hello = [
-       `Hallo, <@${message.member.id}>, ich wünsche dir einen schönen Tag!``Привіт, <@${message.member.id}>, сподіваємось, у вас чудовий день!`,
-       `안녕하세요, <@${message.member.id}>님, 좋은 하루 보내시기 바랍니다!`,
-       `Witaj, <@${message.member.id}>, mam nadzieję, że masz wspaniały dzień!`,
-       `Здраво, <@${message.member.id}>, надам се да вам је леп дан!`,
-       `Γεια σας, <@${message.member.id}>, ελπίζω να έχετε μια υπέροχη μέρα!`,
-     ];
-    let idx = Math.floor(Math.random() * hello.length - 1);
+    //  hello = [
+    //    `Hallo, <@${message.member.id}>, ich wünsche dir einen schönen Tag!`,`Привіт, <@${message.member.id}>, сподіваємось, у вас чудовий день!`,
+    //    `안녕하세요, <@${message.member.id}>님, 좋은 하루 보내시기 바랍니다!`,
+    //    `Witaj, <@${message.member.id}>, mam nadzieję, że masz wspaniały dzień!`,
+    //    `Здраво, <@${message.member.id}>, надам се да вам је леп дан!`,
+    //    `Γεια σας, <@${message.member.id}>, ελπίζω να έχετε μια υπέροχη μέρα!`,
+    //  ];
+    // let idx = Math.floor(Math.random() * hello.length - 1);
    
-   return message.channel.send(hello[idx]);
+   return message.channel.send(
+     `Hello, <@${message.member.id}>, have a nice day!`
+   );
   }
   else if (message.content.includes("morning")) {
-      let morning = [
-        `Guten Morgen, <@${message.member.id}>, Ich bin dein freundlicher Bot!`,
-        `¡Buenos días, <@${message.member.id}>, soy tu amigable bot!`,
-        `Добро јутро, <@${message.member.id}>, ја сам твој пријатељски бот!`,
-        `Καλημέρα, <@${message.member.id}>, είμαι το φιλικό σας bot!`,
-        `Доброе утро, <@${message.member.id}>, я твой дружелюбный бот!`,
-        `God morgon, <@${message.member.id}>, jag är din vänliga bot!`,
-        `좋은 아침입니다, <@${message.member.id}>, 저는 당신의 친절한 봇입니다!`,
-        `Доброго ранку, <@${message.member.id}>, я ваш доброзичливий бот!`,
-      ];
-    let idx = Math.floor(Math.random() * morning.length - 1);
-    return message.channel.send(morning[idx]);
+      // let morning = [
+      //   `Guten Morgen, <@${message.member.id}>, Ich bin dein freundlicher Bot!`,
+      //   `¡Buenos días, <@${message.member.id}>, soy tu amigable bot!`,
+      //   `Добро јутро, <@${message.member.id}>, ја сам твој пријатељски бот!`,
+      //   `Καλημέρα, <@${message.member.id}>, είμαι το φιλικό σας bot!`,
+      //   `Доброе утро, <@${message.member.id}>, я твой дружелюбный бот!`,
+      //   `God morgon, <@${message.member.id}>, jag är din vänliga bot!`,
+      //   `좋은 아침입니다, <@${message.member.id}>, 저는 당신의 친절한 봇입니다!`,
+      //   `Доброго ранку, <@${message.member.id}>, я ваш доброзичливий бот!`,
+      // ];
+    // let idx = Math.floor(Math.random() * morning.length - 1);
+    return message.channel.send(
+      `Good morning, <@${message.member.id}>, I am your kind bot!`
+    );
 
     // Gute Nacht, dein freundlicher Bot wird dich vermissen
    } else if (message.content.includes("hallo")) {
