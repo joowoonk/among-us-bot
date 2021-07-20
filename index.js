@@ -43,7 +43,7 @@ bot.on("message", (message, args) => {
   let morning = [
     `Guten Morgen, <@${message.member.id}>, Ich bin dein freundlicher Bot!`,
     `¡Buenos días, <@${message.member.id}>, soy tu amigable bot!`,
-    `Добро јутро, <@${мессаге.мембер.ид}>, ја сам твој пријатељски бот!`,
+    `Добро јутро, <@${message.member.id}>, ја сам твој пријатељски бот!`,
     `Καλημέρα, <@${message.member.id}>, είμαι το φιλικό σας bot!`,
     `Доброе утро, <@${message.member.id}>, я твой дружелюбный бот!`,
     `God morgon, <@${message.member.id}>, jag är din vänliga bot!`,
@@ -54,7 +54,7 @@ bot.on("message", (message, args) => {
     `Hallo, <@${message.member.id}>, ich wünsche dir einen schönen Tag!``Привіт, <@${message.member.id}>, сподіваємось, у вас чудовий день!`,
     `안녕하세요, <@${message.member.id}>님, 좋은 하루 보내시기 바랍니다!`,
     `Witaj, <@${message.member.id}>, mam nadzieję, że masz wspaniały dzień!`,
-    `Здраво, <@${мессаге.мембер.ид}>, надам се да вам је леп дан!`,
+    `Здраво, <@${message.member.id}>, надам се да вам је леп дан!`,
     `Γεια σας, <@${message.member.id}>, ελπίζω να έχετε μια υπέροχη μέρα!`,
   ];
   if (message.content.includes("hello")) {
