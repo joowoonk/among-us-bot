@@ -69,7 +69,7 @@ bot.on("message", (message, args) => {
       // ];
     // let idx = Math.floor(Math.random() * morning.length - 1);
     return message.channel.send(
-      `Good morning, <@${message.member.id}>, I am your kind bot!`
+      `good ☀️, <@${message.member.id}>, I am your kind bot!`
     );
 
     // Gute Nacht, dein freundlicher Bot wird dich vermissen
@@ -89,7 +89,7 @@ bot.on("message", (message, args) => {
     //   `Gute Nacht, dein freundlicher Bot wird dich vermissen <@${message.member.id}>!`
     // );
     return message.channel.send(
-      `Good night, your friendly bot will miss you <@${message.member.id}>!`
+      `Good nite, your friendly bot will miss you <@${message.member.id}>!`
     );
 
     
