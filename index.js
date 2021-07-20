@@ -58,7 +58,9 @@ bot.on("message", (message, args) => {
     `Γεια σας, <@${message.member.id}>, ελπίζω να έχετε μια υπέροχη μέρα!`,
   ];
   if (message.content.includes("hello")) {
-   return message.channel.send(`Hello, <@${message.member.id}>, I'm your friendly bot!`);
+    let idx = Math.floor(Math.random() * hello.length - 1);
+   
+   return message.channel.send(hello[idx]);
   }
   else if (message.content.includes("morning")) {
     let idx = Math.floor(Math.random() * morning.length - 1);
