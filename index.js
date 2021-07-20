@@ -34,13 +34,24 @@ fs.readdir('./commands/', (err, files) => {
         bot.commands.set(props.help.name, props)
     })
 })
+let morning = [
+  `Guten Morgen, <@${message.member.id}>, Ich bin dein freundlicher Bot!`,
+  `¡Buenos días, <@${message.member.id}>, soy tu amigable bot!`,
+  `Добро јутро, <@${мессаге.мембер.ид}>, ја сам твој пријатељски бот!`,
+  `Καλημέρα, <@${message.member.id}>, είμαι το φιλικό σας bot!`,
+  `Доброе утро, <@${message.member.id}>, я твой дружелюбный бот!`,
+  `God morgon, <@${message.member.id}>, jag är din vänliga bot!`,
+  `좋은 아침입니다, <@${message.member.id}>, 저는 당신의 친절한 봇입니다!`,
+  `Доброго ранку, <@${message.member.id}>, я ваш доброзичливий бот!`,
+];
 let letter = ["A","B","C","D","E","F","G","H","I","J","K","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
 bot.on("message", (message, args) => {
   if (message.content.includes("hello")) {
    return message.channel.send(`Hello, <@${message.member.id}>, I'm your friendly bot!`);
   }
   else if (message.content.includes("morning")) {
-    return message.channel.send(`Guten Morgen, <@${message.member.id}>, Ich bin dein freundlicher Bot!`);
+    let idx = Math.floor(Math.random() * morning.length - 1);
+    return message.channel.send(morning[idx]);
 
     // Gute Nacht, dein freundlicher Bot wird dich vermissen
    } else if (message.content.includes("hallo")) {
@@ -52,6 +63,7 @@ bot.on("message", (message, args) => {
 
     
    }else if (message.content.includes("night")) {
+
     return message.channel.send(`Gute Nacht, dein freundlicher Bot wird dich vermissen <@${message.member.id}>!`);
 
     
