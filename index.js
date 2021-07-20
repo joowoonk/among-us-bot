@@ -34,43 +34,13 @@ fs.readdir('./commands/', (err, files) => {
         bot.commands.set(props.help.name, props)
     })
 })
-
-
-
 let letter = ["A","B","C","D","E","F","G","H","I","J","K","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
 bot.on("message", (message, args) => {
-
-
- 
   if (message.content.includes("hello")) {
-    //  hello = [
-    //    `Hallo, <@${message.member.id}>, ich wünsche dir einen schönen Tag!`,`Привіт, <@${message.member.id}>, сподіваємось, у вас чудовий день!`,
-    //    `안녕하세요, <@${message.member.id}>님, 좋은 하루 보내시기 바랍니다!`,
-    //    `Witaj, <@${message.member.id}>, mam nadzieję, że masz wspaniały dzień!`,
-    //    `Здраво, <@${message.member.id}>, надам се да вам је леп дан!`,
-    //    `Γεια σας, <@${message.member.id}>, ελπίζω να έχετε μια υπέροχη μέρα!`,
-    //  ];
-    // let idx = Math.floor(Math.random() * hello.length - 1);
-   
-   return message.channel.send(
-     `Hello, <@${message.member.id}>, have a nice day!`
-   );
+   return message.channel.send(`Hello, <@${message.member.id}>, I'm your friendly bot!`);
   }
   else if (message.content.includes("morning")) {
-      // let morning = [
-      //   `Guten Morgen, <@${message.member.id}>, Ich bin dein freundlicher Bot!`,
-      //   `¡Buenos días, <@${message.member.id}>, soy tu amigable bot!`,
-      //   `Добро јутро, <@${message.member.id}>, ја сам твој пријатељски бот!`,
-      //   `Καλημέρα, <@${message.member.id}>, είμαι το φιλικό σας bot!`,
-      //   `Доброе утро, <@${message.member.id}>, я твой дружелюбный бот!`,
-      //   `God morgon, <@${message.member.id}>, jag är din vänliga bot!`,
-      //   `좋은 아침입니다, <@${message.member.id}>, 저는 당신의 친절한 봇입니다!`,
-      //   `Доброго ранку, <@${message.member.id}>, я ваш доброзичливий бот!`,
-      // ];
-    // let idx = Math.floor(Math.random() * morning.length - 1);
-    return message.channel.send(
-      `good ☀️, <@${message.member.id}>, I am your kind bot!`
-    );
+    return message.channel.send(`Guten Morgen, <@${message.member.id}>, Ich bin dein freundlicher Bot!`);
 
     // Gute Nacht, dein freundlicher Bot wird dich vermissen
    } else if (message.content.includes("hallo")) {
@@ -78,19 +48,11 @@ bot.on("message", (message, args) => {
 
     // Gute Nacht, dein freundlicher Bot wird dich vermissen
    } else if (message.content.includes("morten")) {
-    return message.channel.send(
-      `Guten Morgen, <@${message.member.id}>, Ich bin dein freundlicher Bot!`
-    );
+    return message.channel.send(`Morning <@${message.member.id}>!`);
 
     
    }else if (message.content.includes("night")) {
-
-    // return message.channel.send(
-    //   `Gute Nacht, dein freundlicher Bot wird dich vermissen <@${message.member.id}>!`
-    // );
-    return message.channel.send(
-      `Good nite, your friendly bot will miss you <@${message.member.id}>!`
-    );
+    return message.channel.send(`Gute Nacht, dein freundlicher Bot wird dich vermissen <@${message.member.id}>!`);
 
     
    }else if (message.content.includes("play among us")) {
