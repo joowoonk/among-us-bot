@@ -34,18 +34,29 @@ fs.readdir('./commands/', (err, files) => {
         bot.commands.set(props.help.name, props)
     })
 })
-let morning = [
-  `Guten Morgen, <@${message.member.id}>, Ich bin dein freundlicher Bot!`,
-  `¡Buenos días, <@${message.member.id}>, soy tu amigable bot!`,
-  `Добро јутро, <@${мессаге.мембер.ид}>, ја сам твој пријатељски бот!`,
-  `Καλημέρα, <@${message.member.id}>, είμαι το φιλικό σας bot!`,
-  `Доброе утро, <@${message.member.id}>, я твой дружелюбный бот!`,
-  `God morgon, <@${message.member.id}>, jag är din vänliga bot!`,
-  `좋은 아침입니다, <@${message.member.id}>, 저는 당신의 친절한 봇입니다!`,
-  `Доброго ранку, <@${message.member.id}>, я ваш доброзичливий бот!`,
-];
+
+
+
 let letter = ["A","B","C","D","E","F","G","H","I","J","K","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
 bot.on("message", (message, args) => {
+
+  let morning = [
+    `Guten Morgen, <@${message.member.id}>, Ich bin dein freundlicher Bot!`,
+    `¡Buenos días, <@${message.member.id}>, soy tu amigable bot!`,
+    `Добро јутро, <@${мессаге.мембер.ид}>, ја сам твој пријатељски бот!`,
+    `Καλημέρα, <@${message.member.id}>, είμαι το φιλικό σας bot!`,
+    `Доброе утро, <@${message.member.id}>, я твой дружелюбный бот!`,
+    `God morgon, <@${message.member.id}>, jag är din vänliga bot!`,
+    `좋은 아침입니다, <@${message.member.id}>, 저는 당신의 친절한 봇입니다!`,
+    `Доброго ранку, <@${message.member.id}>, я ваш доброзичливий бот!`,
+  ];
+  hello = [
+    `Hallo, <@${message.member.id}>, ich wünsche dir einen schönen Tag!``Привіт, <@${message.member.id}>, сподіваємось, у вас чудовий день!`,
+    `안녕하세요, <@${message.member.id}>님, 좋은 하루 보내시기 바랍니다!`,
+    `Witaj, <@${message.member.id}>, mam nadzieję, że masz wspaniały dzień!`,
+    `Здраво, <@${мессаге.мембер.ид}>, надам се да вам је леп дан!`,
+    `Γεια σας, <@${message.member.id}>, ελπίζω να έχετε μια υπέροχη μέρα!`,
+  ];
   if (message.content.includes("hello")) {
    return message.channel.send(`Hello, <@${message.member.id}>, I'm your friendly bot!`);
   }
