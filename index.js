@@ -78,12 +78,19 @@ bot.on("message", (message, args) => {
 
     // Gute Nacht, dein freundlicher Bot wird dich vermissen
    } else if (message.content.includes("morten")) {
-    return message.channel.send(`Morning <@${message.member.id}>!`);
+    return message.channel.send(
+      `Guten Morgen, <@${message.member.id}>, Ich bin dein freundlicher Bot!`
+    );
 
     
    }else if (message.content.includes("night")) {
 
-    return message.channel.send(`Gute Nacht, dein freundlicher Bot wird dich vermissen <@${message.member.id}>!`);
+    // return message.channel.send(
+    //   `Gute Nacht, dein freundlicher Bot wird dich vermissen <@${message.member.id}>!`
+    // );
+    return message.channel.send(
+      `Good night, your friendly bot will miss you <@${message.member.id}>!`
+    );
 
     
    }else if (message.content.includes("play among us")) {
