@@ -83,6 +83,10 @@ bot.on("message", (message, args) => {
      return message.channel.send(
        `Talia is watching you, <@${message.member.id}>!`
      );
+   } else if (message.content.includes("Damn")) {
+     return message.channel.send(
+       `Talia is watching you, <@${message.member.id}>!`
+     );
    } else if (message.content.includes("Shit")) {
      return message.channel.send(
        `Literally your mouth is producing that substance from your mouth, <@${message.member.id}>!`
