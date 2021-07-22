@@ -81,11 +81,11 @@ bot.on("message", (message, args) => {
      );
    } else if (message.content.includes("damn")) {
      return message.channel.send(
-       `<@Talia#6154 is watching you, <@${message.member.id}>!`
+       `Talia is watching you, <@${message.member.id}>!`
      );
    } else if (message.content.includes("Damn")) {
      return message.channel.send(
-       `<@Talia#6154 is watching you, <@${message.member.id}>!`
+       `Talia is watching you, <@${message.member.id}>!`
      );
    } else if (message.content.includes("Shit")) {
      return message.channel.send(
@@ -98,9 +98,9 @@ bot.on("message", (message, args) => {
       "https://tenor.com/view/gay-shit-its-gay-why-are-you-gay-gei-martin-ssempa-gif-17649144"
     );
    } else if (message.content.includes("ass")) {
-     return message.channel.send(`Don't be ass, <@${message.member.id}>!`);
+     return message.channel.send(`Don't be butt, <@${message.member.id}>!`);
    } else if (message.content.includes("ASS")) {
-     return message.channel.send(`Don't be ass, <@${message.member.id}>!`);
+     return message.channel.send(`Don't be butt, <@${message.member.id}>!`);
    } else if (message.content.includes("crap")) {
      return message.channel.send(
        `Literally your mouth is producing that substance from your mouth, <@${message.member.id}>!`
