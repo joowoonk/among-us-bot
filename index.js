@@ -59,6 +59,14 @@ bot.on("message", (message, args) => {
      return message.channel.send(
        `Lord have mercy on your soul, <@${message.member.id}>!`
      );
+   } else if (message.content.includes("cunt")) {
+     return message.channel.send(
+       `Theotokos is watching you, <@${message.member.id}>!`
+     );
+   } else if (message.content.includes("bitch")) {
+     return message.channel.send(
+       `Your mother is also female, <@${message.member.id}>!`
+     );
    } else if (message.content.includes("shut up")) {
      return message.channel.send(`Be nice my friend, <@${message.member.id}>!`);
    } else if (message.content.includes("stfu")) {
