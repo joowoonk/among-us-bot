@@ -67,6 +67,10 @@ bot.on("message", (message, args) => {
      return message.channel.send(
        `Your mother is also female, <@${message.member.id}>!`
      );
+   } else if (message.content.includes("shit")) {
+     return message.channel.send(
+       `Literally your mouth producing that substance from your mouth, <@${message.member.id}>!`
+     );
    } else if (message.content.includes("shut up")) {
      return message.channel.send(`Be nice my friend, <@${message.member.id}>!`);
    } else if (message.content.includes("stfu")) {
