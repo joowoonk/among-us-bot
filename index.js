@@ -84,9 +84,9 @@ bot.on("message", (message, args) => {
         return message.channel.send(
           ("not funny",
           {
-            files: [
-              `https://media.tenor.co/videos/d83de4ce192ea7621d166698d887e3ee/mp4`,
-            ],
+            files: 
+              "./whyareyou.mp4",
+            
           })
         );
       } else if (message.content.includes("GAY")) {
