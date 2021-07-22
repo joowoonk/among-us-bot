@@ -52,87 +52,13 @@ bot.on("message", (message, args) => {
 
     
    }else if (message.content.includes("night")) {
-     return message.channel.send(
-       `Gute Nacht, dein freundlicher Bot wird dich vermissen <@${message.member.id}>!`
-     );
-   } else if (message.content.includes("fuck")) {
-     return message.channel.send(
-       `Lord have mercy on your soul, <@${message.member.id}>!`
-     );
-   } else if (message.content.includes("FUCK")) {
-     return message.channel.send(
-       `Lord have mercy on your soul, <@${message.member.id}>!`
-     );
-   } else if (message.content.includes("Fuck")) {
-     return message.channel.send(
-       `Lord have mercy on your soul, <@${message.member.id}>!`
-     );
-   } else if (message.content.includes("cunt")) {
-     return message.channel.send(
-       `Theotokos is watching you, <@${message.member.id}>!`
-     );
-   } else if (message.content.includes("bitch")) {
-     return message.channel.send(
-       `Your mother is also female, <@${message.member.id}>!`
-     );
-   } else if (message.content.includes("shit")) {
-     return message.channel.send(
-       `Literally your mouth is producing that substance from your mouth, <@${message.member.id}>!`
-     );
-   } else if (message.content.includes("damn")) {
-     return message.channel.send(
-       `Talia is watching you, <@${message.member.id}>!`
-     );
-   } else if (message.content.includes("Damn")) {
-     return message.channel.send(
-       `Talia is watching you, <@${message.member.id}>!`
-     );
-   } else if (message.content.includes("Shit")) {
-     return message.channel.send(
-       `Literally your mouth is producing that substance from your mouth, <@${message.member.id}>!`
-     );
-   } else if (message.content.includes("gay")) {
-     return message.channel.send("https://tenor.com/view/gay-shit-its-gay-why-are-you-gay-gei-martin-ssempa-gif-17649144");
-   } else if (message.content.includes("GAY")) {
-    return message.channel.send(
-      "https://tenor.com/view/gay-shit-its-gay-why-are-you-gay-gei-martin-ssempa-gif-17649144"
-    );
-   } else if (message.content.includes("ass")) {
-     return message.channel.send(`Don't be butt, <@${message.member.id}>!`);
-   } else if (message.content.includes("ASS")) {
-     return message.channel.send(`Don't be butt, <@${message.member.id}>!`);
-   } else if (message.content.includes("crap")) {
-     return message.channel.send(
-       `Literally your mouth is producing that substance from your mouth, <@${message.member.id}>!`
-     );
-   } else if (message.content.includes("shut up")) {
-     return message.channel.send(`Be nice my friend, <@${message.member.id}>!`);
-   } else if (message.content.includes("SHUT")) {
-     return message.channel.send(`Be nice my friend, <@${message.member.id}>!`);
-   } else if (message.content.includes("stfu")) {
-     return message.channel.send(`That's not nice, <@${message.member.id}>!`);
-   } else if (message.content.includes("STFU")) {
-     return message.channel.send(`That's not nice, <@${message.member.id}>!`);
-   } else if (message.content.includes("play among us")) {
-     return message.channel.send(
-       `Me me! I will play with you, <@${message.member.id}>! ${
-         letter[Math.floor(Math.random() * 26)]
-       }${letter[Math.floor(Math.random() * 26)]}${
-         letter[Math.floor(Math.random() * 26)]
-       }${letter[Math.floor(Math.random() * 26)]}${
-         letter[Math.floor(Math.random() * 26)]
-       }${letter[Math.floor(Math.random() * 26)]}`
-     );
-   } else if (message.content.includes("playing among us")) {
-     return message.channel.send(
-       `Me me! I will play with you, <@${message.member.id}>! ${
-         letter[Math.floor(Math.random() * 26)]
-       }${letter[Math.floor(Math.random() * 26)]}${
-         letter[Math.floor(Math.random() * 26)]
-       }${letter[Math.floor(Math.random() * 26)]}${
-         letter[Math.floor(Math.random() * 26)]
-       }${letter[Math.floor(Math.random() * 26)]}`
-     );
+    return message.channel.send(`Gute Nacht, dein freundlicher Bot wird dich vermissen <@${message.member.id}>!`);
+
+    
+   }else if (message.content.includes("play among us")) {
+    return message.channel.send(`Me me! I will play with you, <@${message.member.id}>! ${letter[Math.floor(Math.random() * 26)]}${letter[Math.floor(Math.random() * 26)]}${letter[Math.floor(Math.random() * 26)]}${letter[Math.floor(Math.random() * 26)]}${letter[Math.floor(Math.random() * 26)]}${letter[Math.floor(Math.random() * 26)]}`);
+   }else if (message.content.includes("playing among us")) {
+    return message.channel.send(`Me me! I will play with you, <@${message.member.id}>! ${letter[Math.floor(Math.random() * 26)]}${letter[Math.floor(Math.random() * 26)]}${letter[Math.floor(Math.random() * 26)]}${letter[Math.floor(Math.random() * 26)]}${letter[Math.floor(Math.random() * 26)]}${letter[Math.floor(Math.random() * 26)]}`);
    }
 });
 
