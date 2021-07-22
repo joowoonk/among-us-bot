@@ -97,7 +97,7 @@ bot.on("message", (message, args) => {
     return message.channel.send(
       "https://tenor.com/view/gay-shit-its-gay-why-are-you-gay-gei-martin-ssempa-gif-17649144"
     );
-   } else if (message.content.includes("ass")) {
+   } else if (message.content.includes(" ass")) {
      return message.channel.send(`Don't be butt, <@${message.member.id}>!`);
    } else if (message.content.includes("ASS")) {
      return message.channel.send(`Don't be butt, <@${message.member.id}>!`);
