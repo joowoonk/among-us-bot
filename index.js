@@ -59,6 +59,14 @@ bot.on("message", (message, args) => {
      return message.channel.send(
        `Lord have mercy on your soul, <@${message.member.id}>!`
      );
+   } else if (message.content.includes("FUCK")) {
+     return message.channel.send(
+       `Lord have mercy on your soul, <@${message.member.id}>!`
+     );
+   } else if (message.content.includes("Fuck")) {
+     return message.channel.send(
+       `Lord have mercy on your soul, <@${message.member.id}>!`
+     );
    } else if (message.content.includes("cunt")) {
      return message.channel.send(
        `Theotokos is watching you, <@${message.member.id}>!`
@@ -71,9 +79,17 @@ bot.on("message", (message, args) => {
      return message.channel.send(
        `Literally your mouth producing that substance from your mouth, <@${message.member.id}>!`
      );
+   } else if (message.content.includes("crap")) {
+     return message.channel.send(
+       `Literally your mouth producing that substance from your mouth, <@${message.member.id}>!`
+     );
    } else if (message.content.includes("shut up")) {
      return message.channel.send(`Be nice my friend, <@${message.member.id}>!`);
+   } else if (message.content.includes("SHUT")) {
+     return message.channel.send(`Be nice my friend, <@${message.member.id}>!`);
    } else if (message.content.includes("stfu")) {
+     return message.channel.send(`That's not nice, <@${message.member.id}>!`);
+   } else if (message.content.includes("STFU")) {
      return message.channel.send(`That's not nice, <@${message.member.id}>!`);
    } else if (message.content.includes("play among us")) {
      return message.channel.send(
