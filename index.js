@@ -77,11 +77,11 @@ bot.on("message", (message, args) => {
      );
    } else if (message.content.includes("shit")) {
      return message.channel.send(
-       `Literally your mouth producing that substance from your mouth, <@${message.member.id}>!`
+       `Literally your mouth is producing that substance from your mouth, <@${message.member.id}>!`
      );
    } else if (message.content.includes("crap")) {
      return message.channel.send(
-       `Literally your mouth producing that substance from your mouth, <@${message.member.id}>!`
+       `Literally your mouth is producing that substance from your mouth, <@${message.member.id}>!`
      );
    } else if (message.content.includes("shut up")) {
      return message.channel.send(`Be nice my friend, <@${message.member.id}>!`);
