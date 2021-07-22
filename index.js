@@ -92,21 +92,11 @@ bot.on("message", (message, args) => {
        `Literally your mouth is producing that substance from your mouth, <@${message.member.id}>!`
      );
    } else if (message.content.includes("gay")) {
-     return message.channel.send(
-       ("not funny",
-       {
-         files: "./whyareyou.mp4",
-       })
-     );
+     return message.channel.send("https://tenor.com/view/gay-shit-its-gay-why-are-you-gay-gei-martin-ssempa-gif-17649144");
    } else if (message.content.includes("GAY")) {
-     return message.channel.send(
-       ("not funny",
-       {
-         files: [
-           `https://media.tenor.co/videos/d83de4ce192ea7621d166698d887e3ee/mp4`,
-         ],
-       })
-     );
+    return message.channel.send(
+      "https://tenor.com/view/gay-shit-its-gay-why-are-you-gay-gei-martin-ssempa-gif-17649144"
+    );
    } else if (message.content.includes("ass")) {
      return message.channel.send(`Don't be ass, <@${message.member.id}>!`);
    } else if (message.content.includes("ASS")) {
