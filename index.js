@@ -79,6 +79,10 @@ bot.on("message", (message, args) => {
      return message.channel.send(
        `Literally your mouth is producing that substance from your mouth, <@${message.member.id}>!`
      );
+   } else if (message.content.includes("ass")) {
+     return message.channel.send(`Don't be ass, <@${message.member.id}>!`);
+   } else if (message.content.includes("ASS")) {
+     return message.channel.send(`Don't be ass, <@${message.member.id}>!`);
    } else if (message.content.includes("crap")) {
      return message.channel.send(
        `Literally your mouth is producing that substance from your mouth, <@${message.member.id}>!`
