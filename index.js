@@ -52,13 +52,37 @@ bot.on("message", (message, args) => {
 
     
    }else if (message.content.includes("night")) {
-    return message.channel.send(`Gute Nacht, dein freundlicher Bot wird dich vermissen <@${message.member.id}>!`);
-
-    
-   }else if (message.content.includes("play among us")) {
-    return message.channel.send(`Me me! I will play with you, <@${message.member.id}>! ${letter[Math.floor(Math.random() * 26)]}${letter[Math.floor(Math.random() * 26)]}${letter[Math.floor(Math.random() * 26)]}${letter[Math.floor(Math.random() * 26)]}${letter[Math.floor(Math.random() * 26)]}${letter[Math.floor(Math.random() * 26)]}`);
-   }else if (message.content.includes("playing among us")) {
-    return message.channel.send(`Me me! I will play with you, <@${message.member.id}>! ${letter[Math.floor(Math.random() * 26)]}${letter[Math.floor(Math.random() * 26)]}${letter[Math.floor(Math.random() * 26)]}${letter[Math.floor(Math.random() * 26)]}${letter[Math.floor(Math.random() * 26)]}${letter[Math.floor(Math.random() * 26)]}`);
+     return message.channel.send(
+       `Gute Nacht, dein freundlicher Bot wird dich vermissen <@${message.member.id}>!`
+     );
+   } else if (message.content.includes("fuck")) {
+     return message.channel.send(
+       `Lord have mercy on your soul, <@${message.member.id}>!`
+     );
+   } else if (message.content.includes("shut up")) {
+     return message.channel.send(`Be nice my friend, <@${message.member.id}>!`);
+   } else if (message.content.includes("stfu")) {
+     return message.channel.send(`That's not nice, <@${message.member.id}>!`);
+   } else if (message.content.includes("play among us")) {
+     return message.channel.send(
+       `Me me! I will play with you, <@${message.member.id}>! ${
+         letter[Math.floor(Math.random() * 26)]
+       }${letter[Math.floor(Math.random() * 26)]}${
+         letter[Math.floor(Math.random() * 26)]
+       }${letter[Math.floor(Math.random() * 26)]}${
+         letter[Math.floor(Math.random() * 26)]
+       }${letter[Math.floor(Math.random() * 26)]}`
+     );
+   } else if (message.content.includes("playing among us")) {
+     return message.channel.send(
+       `Me me! I will play with you, <@${message.member.id}>! ${
+         letter[Math.floor(Math.random() * 26)]
+       }${letter[Math.floor(Math.random() * 26)]}${
+         letter[Math.floor(Math.random() * 26)]
+       }${letter[Math.floor(Math.random() * 26)]}${
+         letter[Math.floor(Math.random() * 26)]
+       }${letter[Math.floor(Math.random() * 26)]}`
+     );
    }
 });
 
