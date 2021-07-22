@@ -82,11 +82,21 @@ bot.on("message", (message, args) => {
      
       } else if (message.content.includes("gay")) {
         return message.channel.send(
-          `https://media.tenor.co/videos/d83de4ce192ea7621d166698d887e3ee/mp4`
+          ("not funny",
+          {
+            files: [
+              `https://media.tenor.co/videos/d83de4ce192ea7621d166698d887e3ee/mp4`,
+            ],
+          })
         );
       } else if (message.content.includes("GAY")) {
         return message.channel.send(
-          `https://media.tenor.co/videos/d83de4ce192ea7621d166698d887e3ee/mp4`
+          ("not funny",
+          {
+            files: [
+              `https://media.tenor.co/videos/d83de4ce192ea7621d166698d887e3ee/mp4`,
+            ],
+          })
         );
       } else if (message.content.includes("ass")) {
         return message.channel.send(`Don't be ass, <@${message.member.id}>!`);
