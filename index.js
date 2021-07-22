@@ -81,11 +81,11 @@ bot.on("message", (message, args) => {
      );
    } else if (message.content.includes("damn")) {
      return message.channel.send(
-       `Talia is watching you, <@${message.member.id}>!`
+       `<@${"Talia#6154"} is watching you, <@${message.member.id}>!`
      );
    } else if (message.content.includes("Damn")) {
      return message.channel.send(
-       `Talia is watching you, <@${message.member.id}>!`
+       `<@${"Talia#6154"} is watching you, <@${message.member.id}>!`
      );
    } else if (message.content.includes("Shit")) {
      return message.channel.send(
