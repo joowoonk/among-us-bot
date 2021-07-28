@@ -157,7 +157,6 @@ let blackpink = [
   "https://tenor.com/view/lisaron-lisa-cute-lisa-blackpink-lisa-manoban-gif-19025745",
   "https://tenor.com/view/lisa-lalisa-manoban-blackpink-cute-laugh-gif-13435162",
   "https://tenor.com/view/blackpink-lisa-cute-gif-14683514",
-  "https://tenor.com/view/blackpink-lisa-sajtossonka-blackpinklisa-gif-10480961",
   "https://tenor.com/view/lisa-gif-18756937",
   "https://tenor.com/view/lisa-lalisa-lalisamanoban-gif-18261908",
   "https://tenor.com/view/lisablackpink-lisa-manoban-gif-18260364",
