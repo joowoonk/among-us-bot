@@ -5,7 +5,7 @@ let dave = [
   "https://tenor.com/view/santan-dave-why-chickenshop-gif-20441175",
   "https://tenor.com/view/santan-dave-dave-uk-rap-london-rap-rap-gif-16350533",
   "https://tenor.com/view/nope-no-nike-skepta-giggs-gif-11087714",
-  "https://tenor.com/view/steel-banglez-uk-rap-no-words-mostack-gif-16368111",
+
   "https://tenor.com/view/funky-friday-santan-dave-roadman-gif-21206341",
   "https://media.gq-magazine.co.uk/photos/5d13a9db3b385369a70e9964/3:4/w_960,h_1280,c_limit/dave-hp-gq-26nov18_b.jpg",
   "https://i0.wp.com/rappers.money/wp-content/uploads/2018/03/Santan-Dave-e1522184922659.jpg?fit=515%2C527&ssl=1",
