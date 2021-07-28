@@ -74,7 +74,6 @@ let blackpink = [
   "https://i.pinimg.com/originals/a8/10/07/a81007835381e5097a2640e6397be6ef.jpg",
   "https://headlineplanet.com/home/wp-content/uploads/2019/07/Lisa-Instagram-e1562252580131.jpg",
   "https://images-na.ssl-images-amazon.com/images/I/71bse7JtlfL._SL1200_.jpg",
-  "https://media.nationthailand.com//images/news/2019/09/17/30376327/800_1a81941f8d08a04.jpg?v=1568716844",
   "https://i.pinimg.com/originals/45/f2/b1/45f2b1c3ceec619a36760ec0e6fbb736.png",
   "https://static.bangkokpost.com/media/content/20201105/c1_2014555_201105180552.jpg",
   "https://assets.nst.com.my/images/articles/olslsbpcttc001a_1580458651.jpg",
