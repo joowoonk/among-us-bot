@@ -8,6 +8,8 @@ let dave = [
 
   "https://tenor.com/view/funky-friday-santan-dave-roadman-gif-21206341",
   "https://media.gq-magazine.co.uk/photos/5d13a9db3b385369a70e9964/3:4/w_960,h_1280,c_limit/dave-hp-gq-26nov18_b.jpg",
+  "https://cdn.discordapp.com/attachments/862786189769310219/869818698066694144/image0.jpg",
+  "https://cdn.discordapp.com/attachments/862786189769310219/869818613908000778/image0.jpg",
   "https://i0.wp.com/rappers.money/wp-content/uploads/2018/03/Santan-Dave-e1522184922659.jpg?fit=515%2C527&ssl=1",
   "https://i.guim.co.uk/img/media/3668cffb7b2e92acd9b9b0ff09685c51552d4902/345_294_7406_4444/master/7406.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=6a578284dac816db21bf7b7be0216cea",
   "https://www.nme.com/wp-content/uploads/2021/03/Dave-Santan-Dave.jpg",
