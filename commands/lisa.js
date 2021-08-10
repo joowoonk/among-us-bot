@@ -10,6 +10,7 @@ let blackpink = [
   "https://image.bada.io/files//upload/2021/07/28/4789396_61013e25cf734.webp",
   "https://image.bada.io/files//upload/2021/07/28/4789396_61013e26d84b9.webp",
   "https://image.bada.io/files//upload/2021/07/28/4789396_61013e197fa24.webp",
+  "https://i.pinimg.com/564x/f1/47/2d/f1472d407533524d6b815f59f3891dc3.jpg",
   "https://tenor.com/view/lisa-lisaywy-lisayouthwithyou-gif-20434747",
   "https://tenor.com/view/lisa-lisaywy-lisayouthwithyou-gif-20434755",
   "https://tenor.com/view/lalisa-lisa-blackpink-lisasofia-gif-18834408",
