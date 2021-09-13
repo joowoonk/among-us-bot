@@ -27,14 +27,14 @@ module.exports.run = async (bot, message, args) => {
      } else if (kill[x].includes("tenor")) {
          message.channel.send(`${args[0].toUpperCase()} GOT KILLED!!`);
        return message.channel.send(
-         kill[Math.floor(Math.random() * kill.length - 1)]
+         kill[x]
        );
      } else {
          message.channel.send(`${args[0].toUpperCase()} GOT KILLED!!`);
        return message.channel.send(
          ("Killed",
          {
-           files: [kill[Math.floor(Math.random() * kill.length - 1)]],
+           files: [kill[x]],
          })
        );
      }
