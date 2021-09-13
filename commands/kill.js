@@ -3,7 +3,7 @@ let kill = [
   "https://i.kym-cdn.com/photos/images/original/001/890/995/e1c.gif",
   "https://tenor.com/view/among-us-kill-purple-kills-cyan-purple-killer-gentleman-died-man-gif-19422877",
   "https://tenor.com/view/patrick-star-imposter-among-us-kucing-menangis-spongebob-gif-18520418",
-  "https://tenor.com/view/among-us-among-us-scary-eldritch-horror-horror-loop-gif-18542911",
+  // "https://tenor.com/view/among-us-among-us-scary-eldritch-horror-horror-loop-gif-18542911",
   "https://tenor.com/view/pwned-dominating-gif-18280504",
   "https://tenor.com/view/stab-in-the-back-yeti-yetiapocalypse-kill-murder-gif-20607054",
   "https://tenor.com/view/among-us-gif-19009522",
