@@ -11,7 +11,7 @@ let blackpink = [
   "https://image.bada.io/files//upload/2021/07/28/4789396_61013e26d84b9.webp",
   "https://image.bada.io/files//upload/2021/07/28/4789396_61013e197fa24.webp",
   "https://i.pinimg.com/564x/f1/47/2d/f1472d407533524d6b815f59f3891dc3.jpg",
-  "https://pbs.twimg.com/media/E8R5PwbVIAQgv9e?format=jpg&name=large",
+  // "https://pbs.twimg.com/media/E8R5PwbVIAQgv9e?format=jpg&name=large",
   "https://tenor.com/view/lisa-lisaywy-lisayouthwithyou-gif-20434747",
   "https://tenor.com/view/lisa-lisaywy-lisayouthwithyou-gif-20434755",
   "https://tenor.com/view/lalisa-lisa-blackpink-lisasofia-gif-18834408",
@@ -401,22 +401,23 @@ let blackpink = [
 ];
 
 // console.log(blackpink[x])
-// console.log("blackpink: ", blackpink.length);
+console.log("blackpink: ", blackpink.length);
 module.exports.run = async (bot, message, args) => {
   let x = Math.floor(Math.random() * blackpink.length - 1);
   if (x < 0) {
     x = x * -1;
-  } else if (blackpink[x].includes("tenor")) {
+  }
+   if (blackpink[x].includes("tenor")) {
     // message.channel.send(`Lisa is love <3`);
     return message.channel.send(
       blackpink[x]
     );
+    
+  } else if (blackpink[x].includes("twimg")) {
+     return message.channel.send(blackpink[x]);
   } else {
     // message.channel.send(`Lisa is love <3`);
-    return message.channel.send(
-      ("lisa time",
-      { files: [blackpink[x]] })
-    );
+    return message.channel.send(("lisa time", { files: [blackpink[x]] }));
   }
   
 };
