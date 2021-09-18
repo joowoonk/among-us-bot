@@ -38,12 +38,7 @@ let letter = ["A","B","C","D","E","F","G","H","I","J","K","M","N","O","P","Q","R
 bot.on("message", (message, args) => {
   if (message.content.includes("hello")) {
    return message.channel.send(`Hello, <@${message.member.id}>, I'm your friendly bot!`);
-  }
-  // else if (message.content.includes("morning")) {
-  //   return message.channel.send(`Guten Morgen, <@${message.member.id}>, Ich bin dein freundlicher Bot!`);
-
-    // Gute Nacht, dein freundlicher Bot wird dich vermissen
-   } else if (message.content.includes("hallo")) {
+  } else if (message.content.includes("hallo")) {
     return message.channel.send(`Hello, <@${message.member.id}>, I'm your friendly bot!`);
 
     // Gute Nacht, dein freundlicher Bot wird dich vermissen
