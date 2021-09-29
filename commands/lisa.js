@@ -385,6 +385,8 @@ let blackpink = [
   "https://tenor.com/view/blackpink-lisa-lilifilm-the-movie-dance-gif-20356576",
   "https://tenor.com/view/blackpink-lisa-lilifilm-the-movie-dance-gif-20356578",
   "https://tenor.com/view/blackpink-lisa-lilifilm-the-movie-dance-gif-20356574",
+  "https://tenor.com/view/lalisa-lisa-blackpink-money-gif-23230824",
+  "https://tenor.com/view/lisa-money-gif-23200618",
   "https://tenor.com/view/blackpink-lisa-lilifilm-the-movie-dance-gif-20356573",
   "https://tenor.com/view/blackpink-lisa-lilifilm-the-movie-dance-gif-20356563",
   "https://tenor.com/view/blackpink-lisa-lilifilm-the-movie-dance-gif-20356562",
