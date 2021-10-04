@@ -26,5 +26,5 @@ module.exports.run = async (bot, message, args) => {
     .catch((er) => console.error(er));
 };
 module.exports.help = {
-  name: "lisarandom",
+  name: "lisa",
 };
