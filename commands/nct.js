@@ -2,7 +2,7 @@ const axios = require("axios");
 
 module.exports.run = async (bot, message, args) => {
   axios
-    .get("https://g.tenor.com/v1/random?q=nct&key=LIVDSRZULELA")
+    .get("https://g.tenor.com/v1/random?q=nct&key=MT4ENK2ABIGZ")
     // https://g.tenor.com/v1/random?iu&key=LIVDSRZULELA&limit=1
     .then((res) => {
       return message.channel.send(

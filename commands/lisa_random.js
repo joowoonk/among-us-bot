@@ -14,7 +14,7 @@ const axios = require("axios");
 //   .catch((er) => console.error(er));
 module.exports.run = async (bot, message, args) => {
   axios
-    .get("https://g.tenor.com/v1/random?q=lisa%blackpink&key=LIVDSRZULELA")
+    .get("https://g.tenor.com/v1/random?q=lisa%blackpink&key=MT4ENK2ABIGZ")
     // https://g.tenor.com/v1/random?lisarandom&key=LIVDSRZULELA&limit=1
     .then((res) => {
       return message.channel.send(
