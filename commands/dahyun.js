@@ -1,9 +1,11 @@
 const axios = require("axios");
 
 module.exports.run = async (bot, message, args) => {
+    let dahyun = ["dahyun", "dahyun%dance", "dahyun%cute"];
+    console.log(dahyun[Math.floor(Math.random() * dahyun.length)]);
   axios
     .get(
-      "https://g.tenor.com/v1/random?q=dahyun%twice&key=LIVDSRZULELA"
+      "https://g.tenor.com/v1/random?q="+ dahyun + "&key=LIVDSRZULELA"
     )
     // https://g.tenor.com/v1/random?momo&key=LIVDSRZULELA&limit=1
     .then((res) => {
