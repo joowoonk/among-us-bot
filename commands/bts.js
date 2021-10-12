@@ -105,7 +105,7 @@ let bts = [
 // console.log(bts[x])
 console.log("bts: ", bts.length);
 module.exports.run = async (bot, message, args) => {
-  let x = Math.floor(Math.random() * bts.length - 1);
+  let x = Math.floor(Math.random() * bts.length);
   if (x < 0) {
     x = x * -1;
   } else if (bts[x].includes("tenor")) {

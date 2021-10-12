@@ -17,7 +17,7 @@ let dave = [
 // console.log(bts[x])
 
 module.exports.run = async (bot, message, args) => {
-  let x = Math.floor(Math.random() * dave.length - 1);
+  let x = Math.floor(Math.random() * dave.length);
   if (x < 0) {
     x = x * -1;
   } else if (dave[x].includes("tenor")) {

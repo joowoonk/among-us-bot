@@ -21,7 +21,7 @@ module.exports.run = async (bot, message, args) => {
 
 
 
-     let x = Math.floor(Math.random() * kill.length - 1);
+     let x = Math.floor(Math.random() * kill.length);
      if (x < 0) {
        x = x * -1;
      } else if (kill[x].includes("tenor")) {

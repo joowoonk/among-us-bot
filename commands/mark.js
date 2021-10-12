@@ -7,7 +7,7 @@ module.exports.run = async (bot, message, args) => {
     .then((res) => {
       return message.channel.send(
         res.data.results[
-          Math.floor(Math.random() * res.data.results.length - 1)
+          Math.floor(Math.random() * res.data.results.length)
         ].url
       );
     })
