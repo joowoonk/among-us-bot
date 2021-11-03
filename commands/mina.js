@@ -5,7 +5,6 @@ module.exports.run = async (bot, message, args) => {
   console.log(mina[Math.floor(Math.random() * mina.length)]);
   axios
     .get("https://g.tenor.com/v1/random?q="+mina+"&key=LIVDSRZULELA")
-    // https://g.tenor.com/v1/random?momo&key=LIVDSRZULELA&limit=1
     .then((res) => {
       return message.channel.send(
         res.data.results[
