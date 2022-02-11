@@ -6,7 +6,7 @@ module.exports.run = async (bot, message, args) => {
   }
   return message.channel.send(
     `
-    ```python 
+    $python 
     $bts
     $changwook
     $dahyun
@@ -42,8 +42,7 @@ module.exports.run = async (bot, message, args) => {
     $love username
     $sus username
     $vent username
-    ```
-    `
+  `
   );
 };
 
