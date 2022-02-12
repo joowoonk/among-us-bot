@@ -23,6 +23,7 @@ module.exports.run = async (bot, message, args) => {
     $lalisa
     $lisa
     $jisoo
+    $macho
     $mark
     $mina
     $momo
