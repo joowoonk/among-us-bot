@@ -27,6 +27,7 @@ module.exports.run = async (bot, message, args) => {
     $mina
     $momo
     $nct
+    $ryujin
     $seungmin
     $straykids
     $tablo
