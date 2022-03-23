@@ -1,7 +1,7 @@
 const axios = require("axios");
 
 module.exports.run = async (bot, message, args) => {
-  let wonwoo = "wonwoo";
+  let wonwoo = "wonwoo%seventeen";
   axios
     .get("https://g.tenor.com/v1/random?q=" + wonwoo + "%itzy&key=LIVDSRZULELA")
     // https://g.tenor.com/v1/random?wonwoo&key=LIVDSRZULELA&limit=1
