@@ -35,7 +35,7 @@ module.exports.run = async (bot, message, args) => {
     $tablo
     $tzuyu
 
-    $color username
+    $color 
     $dance username
     $eject username
     $meeting
