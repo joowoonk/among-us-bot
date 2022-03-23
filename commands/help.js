@@ -34,6 +34,7 @@ module.exports.run = async (bot, message, args) => {
     $straykids
     $tablo
     $tzuyu
+    $wonwoo
 
     $color 
     $dance username
