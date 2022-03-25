@@ -12,7 +12,9 @@ bot.on("ready", async () => {
     console.log(`${bot.user.username} is ready for action!`)
     // bot.user.setActivity("..Under Construction!");
     // if (config.activity.streaming == true){
-        bot.user.setActivity("I'm nobody")
+        bot.user.setActivity(
+          "Commad Lines: $bts $changwook $dahyun $dave $eunwoo $exo $got7 $hyunjin $hyunjin $jackson $jangkiyon $jichang $jihyo $jisoo $lalisa $lisa $jisoo $macho $mark $mina $momo $nct $ryujin $seungmin $straykids $tablo $tzuyu $wonwoo $color $dance username $eject username $meeting $greetings $kill username $love username $sus username $vent username"
+        );
         // bot.user.setStatus("dnd")
     // }
 })
