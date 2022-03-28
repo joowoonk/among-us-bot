@@ -1,9 +1,9 @@
 const axios = require("axios");
 
 module.exports.run = async (bot, message, args) => {
-  let wonwoo = "wonwoo%seventeen";
+  let wonwoo = "wonwoo%kpop";
   axios
-    .get("https://g.tenor.com/v1/random?q=" + wonwoo + "%itzy&key=LIVDSRZULELA")
+    .get("https://g.tenor.com/v1/random?q=" + wonwoo + "&key=LIVDSRZULELA")
     // https://g.tenor.com/v1/random?wonwoo&key=LIVDSRZULELA&limit=1
     .then((res) => {
       return message.channel.send(
