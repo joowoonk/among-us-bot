@@ -40,14 +40,11 @@ let letter = ["A","B","C","D","E","F","G","H","I","J","K","M","N","O","P","Q","R
 bot.on("message", (message, args) => {
   if (message.content.includes("hello")) {
    return message.channel.send(`Hello, <@${message.member.id}>, I'm your friendly bot!`);
-  } else if (message.content.includes("hallo")) {
-    return message.channel.send(`Hello, <@${message.member.id}>, I'm your friendly bot!`);
-
+  
     // Gute Nacht, dein freundlicher Bot wird dich vermissen
    } else if (message.content.includes("morten")) {
     return message.channel.send(`Morning <@${message.member.id}>!`);
 
-    
    }else if (message.content.includes("night")) {
      return message.channel.send(
        `Gute Nacht, dein freundlicher Bot wird dich vermissen <@${message.member.id}>!`
@@ -64,11 +61,7 @@ bot.on("message", (message, args) => {
      return message.channel.send(
        `Lord have mercy on your soul, <@${message.member.id}>!`
      );
-   } else if (message.content.includes("cunt")) {
-     return message.channel.send(
-       `Theotokos is watching you, <@${message.member.id}>!`
-     );
-   } else if (message.content.includes("bitch")) {
+   }  else if (message.content.includes("bitch")) {
      return message.channel.send(
        `Your mother is also female, <@${message.member.id}>!`
      );
@@ -84,17 +77,13 @@ bot.on("message", (message, args) => {
      return message.channel.send(
        `Talia is watching you, <@${message.member.id}>!`
      );
-   } else if (message.content.includes("Shit")) {
-     return message.channel.send(
-       `Literally your mouth is producing that substance from your mouth, <@${message.member.id}>!`
-     );
    } else if (message.content.includes("gay")) {
      return message.channel.send("https://tenor.com/view/gay-shit-its-gay-why-are-you-gay-gei-martin-ssempa-gif-17649144");
    } else if (message.content.includes("GAY")) {
     return message.channel.send(
       "https://tenor.com/view/gay-shit-its-gay-why-are-you-gay-gei-martin-ssempa-gif-17649144"
     );
-   } else if (message.content.includes(" ass")) {
+   } else if (message.content.includes("ass ")) {
      return message.channel.send(`Don't be butt, <@${message.member.id}>!`);
    } else if (message.content.includes("ASS")) {
      return message.channel.send(`Don't be butt, <@${message.member.id}>!`);
@@ -134,148 +123,148 @@ bot.on("message", (message, args) => {
 });
 
 
-bot.on("message", async (message, args) => {
-  try {
-     if (message.author.bot) return;
-    if (!message.content.startsWith(config.prefix)) return;
+// bot.on("message", async (message, args) => {
+//   try {
+//      if (message.author.bot) return;
+//     if (!message.content.startsWith(config.prefix)) return;
   
-    const serverQueue = queue.get(message.guild.id);
+//     const serverQueue = queue.get(message.guild.id);
   
-    if (message.content.startsWith(`${config.prefix}play`)) {
-      execute(message, serverQueue);
-      return;
+//     if (message.content.startsWith(`${config.prefix}play`)) {
+//       execute(message, serverQueue);
+//       return;
       
-    } else if (message.content.startsWith(`${config.prefix}skip`)) {
-      skip(message, serverQueue);
-      return 
-    }else if (message.content.startsWith(`${config.prefix}talk`)) {
+//     } else if (message.content.startsWith(`${config.prefix}skip`)) {
+//       skip(message, serverQueue);
+//       return 
+//     }else if (message.content.startsWith(`${config.prefix}talk`)) {
       
-      return message.channel.send("What do you want me to talk about?");
+//       return message.channel.send("What do you want me to talk about?");
       
-    }  else if (message.content.startsWith(`${config.prefix}goodnight`)) {
+//     }  else if (message.content.startsWith(`${config.prefix}goodnight`)) {
       
-      return message.channel.send("GOOD NIGHT! SWEET DREAM!!~");
+//       return message.channel.send("GOOD NIGHT! SWEET DREAM!!~");
       
-    }else if (message.content.startsWith(`${config.prefix}stop`)) {
-      stop(message, serverQueue);
-      return;
-    } else {
-      // message.channel.send("I dont know what you want");
-      return;
-    }
-  } catch (error) {
-    console.error(error)
-  }
+//     }else if (message.content.startsWith(`${config.prefix}stop`)) {
+//       stop(message, serverQueue);
+//       return;
+//     } else {
+//       // message.channel.send("I dont know what you want");
+//       return;
+//     }
+//   } catch (error) {
+//     console.error(error)
+//   }
    
-  });
+//   });
   
-  async function execute(message, serverQueue) {
-    const args = message.content.split(" ");
-  // console.log({args})
-    const voiceChannel = message.member.voice.channel;
-    if (!voiceChannel)
-      return message.channel.send(
-        "You need to be in a voice channel to play music!"
-      );
-    const permissions = voiceChannel.permissionsFor(message.client.user);
-    if (!permissions.has("CONNECT") || !permissions.has("SPEAK")) {
-      return message.channel.send(
-        "I need the permissions to join and speak in your voice channel!"
-      );
-    }
+//   async function execute(message, serverQueue) {
+//     const args = message.content.split(" ");
+//   // console.log({args})
+//     const voiceChannel = message.member.voice.channel;
+//     if (!voiceChannel)
+//       return message.channel.send(
+//         "You need to be in a voice channel to play music!"
+//       );
+//     const permissions = voiceChannel.permissionsFor(message.client.user);
+//     if (!permissions.has("CONNECT") || !permissions.has("SPEAK")) {
+//       return message.channel.send(
+//         "I need the permissions to join and speak in your voice channel!"
+//       );
+//     }
   
-    const songInfo = await ytdl.getInfo(args[1]);
-  //   console.log({songInfo})
-    const song = {
-      title: songInfo.videoDetails.title,
-      url: songInfo.videoDetails.video_url,
-    };
-  //   console.log(song)
-    if (!serverQueue) {
-      const queueContruct = {
-        textChannel: message.channel,
-        voiceChannel: voiceChannel,
-        connection: null,
-        songs: [],
-        volume: 5,
-        playing: true
-      };
+//     const songInfo = await ytdl.getInfo(args[1]);
+//   //   console.log({songInfo})
+//     const song = {
+//       title: songInfo.videoDetails.title,
+//       url: songInfo.videoDetails.video_url,
+//     };
+//   //   console.log(song)
+//     if (!serverQueue) {
+//       const queueContruct = {
+//         textChannel: message.channel,
+//         voiceChannel: voiceChannel,
+//         connection: null,
+//         songs: [],
+//         volume: 5,
+//         playing: true
+//       };
   
-      queue.set(message.guild.id, queueContruct);
+//       queue.set(message.guild.id, queueContruct);
   
-      queueContruct.songs.push(song);
+//       queueContruct.songs.push(song);
   
-      try {
-        var connection = await voiceChannel.join();
-        queueContruct.connection = connection;
-        play(message.guild, queueContruct.songs[0]);
-      } catch (err) {
-        console.log(err);
-        queue.delete(message.guild.id);
-        return message.channel.send(err);
-      }
-    } else {
-      serverQueue.songs.push(song);
-      return message.channel.send(`${song.title} has been added to the queue!`);
-    }
-  }
+//       try {
+//         var connection = await voiceChannel.join();
+//         queueContruct.connection = connection;
+//         play(message.guild, queueContruct.songs[0]);
+//       } catch (err) {
+//         console.log(err);
+//         queue.delete(message.guild.id);
+//         return message.channel.send(err);
+//       }
+//     } else {
+//       serverQueue.songs.push(song);
+//       return message.channel.send(`${song.title} has been added to the queue!`);
+//     }
+//   }
   
-  function skip(message, serverQueue) {
-    if (!message.member.voice.channel)
-      return message.channel.send(
-        "You have to be in a voice channel to stop the music!"
-      );
-    if (!serverQueue)
-      return message.channel.send("There is no song that I could skip!");
-    serverQueue.connection.dispatcher.end();
-  }
+//   function skip(message, serverQueue) {
+//     if (!message.member.voice.channel)
+//       return message.channel.send(
+//         "You have to be in a voice channel to stop the music!"
+//       );
+//     if (!serverQueue)
+//       return message.channel.send("There is no song that I could skip!");
+//     serverQueue.connection.dispatcher.end();
+//   }
   
-  function stop(message, serverQueue) {
-    if (!message.member.voice.channel)
-      return message.channel.send(
-        "You have to be in a voice channel to stop the music!"
-      );
-    serverQueue.songs = [];
-    serverQueue.connection.dispatcher.end();
-  }
+//   function stop(message, serverQueue) {
+//     if (!message.member.voice.channel)
+//       return message.channel.send(
+//         "You have to be in a voice channel to stop the music!"
+//       );
+//     serverQueue.songs = [];
+//     serverQueue.connection.dispatcher.end();
+//   }
   
-  function play(guild, song) {
-    const serverQueue = queue.get(guild.id);
-    if (!song) {
-      serverQueue.voiceChannel.leave();
-      queue.delete(guild.id);
-      return;
-    }
-  //   console.log(song)
-    const dispatcher = serverQueue.connection
-      .play(ytdl(song.url))
-      .on("finish", () => {
-        serverQueue.songs.shift();
-        play(guild, serverQueue.songs[0]);
-      })
-      .on("error", error => console.error(error));
-    dispatcher.setVolumeLogarithmic(serverQueue.volume / 5);
-    serverQueue.textChannel.send(`Start playing: **${song.title}**`);
-  }
+//   function play(guild, song) {
+//     const serverQueue = queue.get(guild.id);
+//     if (!song) {
+//       serverQueue.voiceChannel.leave();
+//       queue.delete(guild.id);
+//       return;
+//     }
+//   //   console.log(song)
+//     const dispatcher = serverQueue.connection
+//       .play(ytdl(song.url))
+//       .on("finish", () => {
+//         serverQueue.songs.shift();
+//         play(guild, serverQueue.songs[0]);
+//       })
+//       .on("error", error => console.error(error));
+//     dispatcher.setVolumeLogarithmic(serverQueue.volume / 5);
+//     serverQueue.textChannel.send(`Start playing: **${song.title}**`);
+//   }
 
-bot.on("message", async message => {
-    if (message.author.bot) return;
-    if (message.channel.type === "dm") return
+// bot.on("message", async message => {
+//     if (message.author.bot) return;
+//     if (message.channel.type === "dm") return
 
-    let prefix = config.prefix
-    let messageArray = message.content.split(" ");
-    let command = messageArray[0].toLowerCase()
-    let args = messageArray.slice(1)
+//     let prefix = config.prefix
+//     let messageArray = message.content.split(" ");
+//     let command = messageArray[0].toLowerCase()
+//     let args = messageArray.slice(1)
 
-    if(!command.startsWith(prefix)) return;
+//     if(!command.startsWith(prefix)) return;
 
 
 
     
 
-    let cmd = bot.commands.get(command.slice(prefix.length));
-    if (cmd) cmd.run(bot, message, args)
-})
+//     let cmd = bot.commands.get(command.slice(prefix.length));
+//     if (cmd) cmd.run(bot, message, args)
+// })
 
 
 
