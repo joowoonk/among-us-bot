@@ -93,10 +93,10 @@ bot.on("message", (message, args) => {
     return message.channel.send(
       `Literally your mouth is producing that substance from your mouth, <@${message.member.id}>!`
     );
-  } else if (message.content.includes("gay")) {
-    return message.channel.send(
-      "https://tenor.com/view/whyareyougay-uganda-gay-gif-14399349"
-    );
+    // } else if (message.content.includes("gay")) {
+    //   return message.channel.send(
+    //     "https://tenor.com/view/whyareyougay-uganda-gay-gif-14399349"
+    //   );
   } else if (message.content.toLowerCase().includes("ass")) {
     return message.channel.send(`Don't be butt, <@${message.member.id}>!`);
   } else if (message.content.toLowerCase().includes("shut up")) {
