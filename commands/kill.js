@@ -7,6 +7,7 @@ let kill = [
   "https://tenor.com/view/pwned-dominating-gif-18280504",
   "https://tenor.com/view/stab-in-the-back-yeti-yetiapocalypse-kill-murder-gif-20607054",
   "https://tenor.com/view/among-us-gif-19009522",
+  "https://tenor.com/view/among-us-meme-gif-23983860",
 ];
 
 module.exports.run = async (bot, message, args) => {
