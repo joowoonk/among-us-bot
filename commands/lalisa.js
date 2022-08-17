@@ -1,4 +1,5 @@
-let blackpink = ["https://tenor.com/view/lisa-blackpink-gif-23660758",
+let blackpink = [
+  "https://tenor.com/view/lisa-blackpink-gif-23660758",
   "https://image.bada.io/files//upload/2021/07/28/4789396_61013e1ae1d3c.webp",
   "https://image.bada.io/files//upload/2021/07/28/4789396_61013e1c24b91.webp",
   "https://image.bada.io/files//upload/2021/07/28/4789396_61013e1dacbdd.webp",
@@ -83,6 +84,48 @@ let blackpink = ["https://tenor.com/view/lisa-blackpink-gif-23660758",
   "https://tenor.com/view/lisa-gif-21618880",
   "https://tenor.com/view/lisa-gif-21619638",
   "https://tenor.com/view/lisaron-lisa-cute-lisa-heart-blackpink-ronlisa-gif-19025775",
+  "https://tenor.com/view/lisa-lalisa-lisa-on-stage-lisa-fans-lisa-waving-gif-24533024",
+  "https://tenor.com/view/lisafunny-lalisa-lisa-lisafading-jenlisa-gif-23191588",
+  "https://tenor.com/view/zim-zimtwt-zimtwitter-zimthinker-gif-20825069",
+  "https://tenor.com/view/blackpink-kpop-lalisa-manoban-pranpriya-manoban-lisa-gif-17551603",
+  "https://tenor.com/view/lisa-dance-lalisa-dance-lalisa-lalisa-mv-lisa-gif-23050747",
+  "https://tenor.com/view/blackpink-kpop-lalisa-manoban-pranpriya-manoban-lisa-gif-17551603",
+  "https://tenor.com/view/blackpink-lisa-blackpink-lalisa-lisa-lalisa-manoban-gif-14328417",
+  "https://tenor.com/view/black-pink-lisa-lalisa-kpop-gif-11362042",
+  "https://tenor.com/view/sushichaeng-lisa-lisa-manoban-lalisa-manoban-blackpink-gif-22143710",
+  "https://tenor.com/view/blackpink-lisa-blackpink-lisa-lalisa-manoban-kpop-gif-14328466",
+  "https://tenor.com/view/lisa-lisa-blackpink-blackpink-lalisa-lisa-manoban-gif-21084568",
+  "https://tenor.com/view/kas-hiatus-hiatus-frau-manoban-lisa-manoban-lalisa-gif-16679627",
+  "https://tenor.com/view/sushichaeng-blackpink-chaelisa-lisa-lisa-manoban-gif-22409676",
+  "https://tenor.com/view/blackpink-bp-ros%C3%A9-chaeyoung-jisoo-gif-21069179",
+  "https://tenor.com/view/lalisa-blackpink-d4-mv-icon-gif-21679468",
+  "https://tenor.com/view/lisa-crying-gif-21779947",
+  "https://tenor.com/view/lalisa-blackpink-lisa-jisoo-jacket-gif-15321741",
+  "https://tenor.com/view/blackpink-ddu-du-ddu-du-lisa-gif-18459834",
+  "https://tenor.com/view/blackpink-dancing-hot-love-lisa-gif-18965491",
+  "https://tenor.com/view/blackpink-kpop-lalisa-manoban-pranpriya-manoban-lisa-gif-17564931",
+  "https://tenor.com/view/blackpink-sing-lisa-lalisa-manoban-gif-19069334",
+  "https://tenor.com/view/lalisa-lisapinkhair-lisa-manoban-lalilsa-manoban-gif-23728642",
+  "https://tenor.com/view/blackpink-kpop-lalisa-manoban-pranpriya-manoban-lisa-gif-17646799",
+  "https://tenor.com/view/lisa-lalisa-lisa-twerk-lisa-dance-lisa-dancing-gif-24532945",
+  "https://tenor.com/view/lisa-blackpink-icons-dark-gif-22221041",
+  "https://tenor.com/view/lisa-lalisa-lisa-solo-stage-lisa-dance-lalisa-dance-gif-24518864",
+  "https://tenor.com/view/yeah-yey-blackpinklisa-lisa-dance-gif-15317977",
+  "https://tenor.com/view/lisa-gif-22457306",
+  "https://tenor.com/view/lisa-lalisa-lisa-lalisa-lalisa-lisa-lalisa-mv-gif-24540971",
+  "https://tenor.com/view/lisa-blackpink-blink-lisa-blackpink-gif-gif-22759162",
+  "https://tenor.com/view/lisa-lalisa-lalisa-manoban-lalisa-manobal-lisa-blackpink-gif-24518857",
+  "https://tenor.com/view/chaelisa-lichaeng-lisa-ros%C3%A9-ros%C3%A9lisa-lisa-ros%C3%A9kill-this-love-gif-24532895",
+  "https://tenor.com/view/lalisa-lisa-lisa-cute-lisa-hot-lalisa-manobal-gif-23354203",
+  "https://tenor.com/view/drawing-gifs-art-gifs-satisfying-gifs-sketch-artwork-gif-22925694",
+  "https://tenor.com/view/drawing-gifs-art-gifs-satisfying-gifs-sketch-artwork-gif-22925694",
+  "https://tenor.com/view/lisa-gif-23292566",
+  "https://tenor.com/view/lisa-lalisa-lalisa-manobal-lisa-blackpink-lisa-cute-gif-25420127",
+  "https://tenor.com/view/lisa-lisa-blackpink-lisa-cute-lisa-sexy-lisa-beautiful-gif-24753285",
+  "https://tenor.com/view/lisa-lisa-de-val-lisa-blackpink-gif-25592945",
+  "https://tenor.com/view/lisa-lisa-cute-lisa-sexy-lisa-hot-lisa-queen-gif-24753306",
+  "https://tenor.com/view/lisa-lalisa-blackpink-lisa-blackpink-gif-24787220",
+  "https://tenor.com/view/lisa-lalisa-manoban-blackpink-kpop-gif-24323668",
   "https://tenor.com/view/ronlisa-lisa-blackpink-lisa-fingerheart-lisa-heart-ron-gif-19025782",
   "https://pm1.narvii.com/7470/5db330ff7415e111b0eb611271954771ff7854d4r1-540-595v2_uhq.jpg",
   "https://pbs.twimg.com/media/Egeuf9qWoAIvO64.jpg",
@@ -322,7 +365,7 @@ let blackpink = ["https://tenor.com/view/lisa-blackpink-gif-23660758",
   "https://tenor.com/view/lisa-lalisa-lisa-blackpink-blackpink-lalisa-manoban-gif-23029948",
   "https://tenor.com/view/bbrunette-gif-19902828",
   "https://tenor.com/view/blackpink-lisa-blackpink-lisa-lalisa-manoban-kpop-gif-14328466",
- 
+
   "https://tenor.com/view/blackpink-ice-cream-you-indicate-touching-nose-gif-18465850",
   "https://tenor.com/view/blackpink-lisa-blackpink-lisa-lalisa-manoban-manoban-gif-14328480",
   "https://tenor.com/view/lisa-blackpink-creepy-silly-kpop-gif-8137268",
@@ -561,19 +604,15 @@ module.exports.run = async (bot, message, args) => {
   if (x < 0) {
     x = x * -1;
   }
-   if (blackpink[x].includes("tenor")) {
+  if (blackpink[x].includes("tenor")) {
     // message.channel.send(`Lisa is love <3`);
-    return message.channel.send(
-      blackpink[x]
-    );
-    
+    return message.channel.send(blackpink[x]);
   } else if (blackpink[x].includes("twimg")) {
-     return message.channel.send(blackpink[x]);
+    return message.channel.send(blackpink[x]);
   } else {
     // message.channel.send(`Lisa is love <3`);
     return message.channel.send(("lisa time", { files: [blackpink[x]] }));
   }
-  
 };
 
 module.exports.help = {
